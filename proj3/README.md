@@ -17,7 +17,7 @@ v textovém souboru.
 Odevzdání: Program implementujte ve zdrojovém souboru proj3.c. Zdrojový soubor odevzdejte prostřednictvím informačního systému.
 
 Překlad: Program bude překládán s následujícími argumenty
-```sh
+```
 $ gcc -std=c99 -Wall -Wextra -Werror -DNDEBUG proj3.c -o proj3 -lm
 ```
 - Definice makra NDEBUG (argument -DNDEBUG) je z důvodu anulování efektu ladicích informací.
@@ -55,7 +55,7 @@ označených komentářem TODO.
 Načítání vstupního souboru a následný výpis:
 
 1 - Implementujte funkce:
-```c
+```
 void init_cluster(struct cluster_t *c, int cap);
 void clear_cluster(struct cluster_t *c);
 void append_cluster(struct cluster_t *c, struct obj_t obj);
@@ -98,7 +98,7 @@ count=20
 93 944 835
 ```
 Načtení vstupního souboru a následné vypsání shluků:
-```sh
+```
 $ ./proj3 objekty 20
 Clusters:
 cluster 0: 40[86,663]
@@ -127,7 +127,7 @@ cluster 19: 93[944,835]
 Implementujte všechny ostatní funkce v kostře souboru proj3.c označené komentářem TODO. Výsledný program odevzdejte.
 
 ### Příklady vstupů a výstupů
-```sh
+```
 $ cat objekty
 count=20
 40 86 663
@@ -151,7 +151,7 @@ count=20
 89 749 190
 93 944 835
 ```
-```sh
+```
 $ ./proj3 objekty 8
 Clusters:
 cluster 0: 40[86,663] 75[28,603] 86[238,650]
@@ -163,7 +163,7 @@ cluster 5: 56[44,854] 62[85,874] 68[80,770]
 cluster 6: 57[795,59] 83[603,68] 89[749,190]
 cluster 7: 61[267,375] 66[125,211] 72[277,272] 74[222,444] 87[149,304]
 ```
-```sh
+```
 $ valgrind ./proj3 objekty 19
 ==8142== Memcheck, a memory error detector
 ==8142== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
